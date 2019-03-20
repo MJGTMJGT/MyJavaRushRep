@@ -22,19 +22,23 @@ public class Solution {
     }
 
     public static Set<Cat> createCats() {
-        HashSet<Cat> result = new HashSet<Cat>();
+        HashSet<Cat> result = new HashSet<>();
         //напишите тут ваш код
-
-        Cat cat1 = new Cat();
-        Cat cat2 = new Cat();
-        Cat cat3 = new Cat();
-        result.add(cat1, cat2, cat3);
+        for (int i = 0; i < 4; i++) {
+            Cat cat = new Cat();
+            result.add(cat);
+        }
         return result;
     }
 
     public static Set<Dog> createDogs() {
         //напишите тут ваш код
-        return null;
+        HashSet<Dog> result = new HashSet<>();
+        for (int i = 0; i < 3; i++) {
+            Dog dog = new Dog();
+            result.add(dog);
+        }
+        return result;
     }
 
     public static Set<Object> join(Set<Cat> cats, Set<Dog> dogs) {
@@ -47,7 +51,7 @@ public class Solution {
 
     public static void removeCats(Set<Object> pets, Set<Cat> cats) {
         //напишите тут ваш код
-        pets.addAll(cats);
+        pets.removeAll(cats);
     }
 
     public static void printPets(Set<Object> pets) {
