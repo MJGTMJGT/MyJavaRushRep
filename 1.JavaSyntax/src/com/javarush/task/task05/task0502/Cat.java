@@ -19,7 +19,8 @@ public class Cat {
         int strengthAdvantage = this.strength > anotherCat.strength ? 1 : 0;
 
         int score = ageAdvantage + weightAdvantage + strengthAdvantage;
-        return score > 2; // return score > 2 ? true : false;
+        return score > 2;
+        //return (this.age > anotherCat.age ? 1 : 0) + (this.weight > anotherCat.weight ? 1 : 0) + (this.strength > anotherCat.strength ? 1 : 0) > 2;
     }
 
     public static void main(String[] args) {

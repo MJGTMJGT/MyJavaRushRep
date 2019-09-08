@@ -12,9 +12,9 @@ import java.util.Collections;
 public class Solution {
     public static void main(String[] args) throws Exception {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        int tale = Integer.parseInt(reader.readLine());
-        int[] arr = new int[tale];
-        for (int i = 0; i < tale; i++) {
+        int s1 = Integer.parseInt(reader.readLine());
+        int[] arr = new int[s1];
+        for (int i = 0; i < s1; i++) {
             arr[i] = Integer.parseInt(reader.readLine());
         }
 

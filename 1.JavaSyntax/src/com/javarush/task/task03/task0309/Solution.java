@@ -1,7 +1,7 @@
 package com.javarush.task.task03.task0309;
 
 /* 
-Сумма 10 чисел
+Сумма 5 чисел
 */
 
 public class Solution {
