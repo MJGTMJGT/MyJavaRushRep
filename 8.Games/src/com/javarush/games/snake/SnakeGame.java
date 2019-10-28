@@ -6,6 +6,7 @@ public class SnakeGame extends Game {
     public static final int WIDTH = 15;
     public static final int HEIGHT = 15;
     private static final int GOAL = 28;
+    private static final int MESDIALOG = 40;
     private int turnDelay;
     private int score;
     private boolean isGameStopped;
@@ -83,12 +84,12 @@ public class SnakeGame extends Game {
     private void gameOver() {
         stopTurnTimer();
         isGameStopped = true;
-        showMessageDialog(Color.RED, "GAME OVER", Color.BLUE,1);
+        showMessageDialog(Color.RED, "            GAME OVER            ", Color.BLUE,MESDIALOG);
     }
 
     private void win() {
         stopTurnTimer();
         isGameStopped = true;
-        showMessageDialog(Color.GREEN, "YOU WIN", Color.BLUE, 1);
+        showMessageDialog(Color.GREEN, "              YOU WIN              ", Color.BLUE, MESDIALOG);
     }
 }
